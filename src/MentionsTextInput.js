@@ -124,7 +124,7 @@ export default class MentionsTextInput extends Component {
               textInputHeight: this.props.textInputMinHeight >= event.nativeEvent.contentSize.height ? this.props.textInputMinHeight : event.nativeEvent.contentSize.height + 10,
             });
           }}
-          ref={component => this.onRef(_textInput)}
+          ref={component => this.props.onRef(_textInput)}
           onChangeText={this.onChangeText.bind(this)}
           multiline={true}
           value={this.props.value}
